@@ -1,0 +1,9 @@
+{% extends '__base__.html' %}
+{% block title %}Let me help{% endblock %}
+{% block content %}
+        {% if name %}
+            <h1>{{ name }}</h1>
+        {% else %}
+            <h1> hello world </h1>
+        {% endif %}
+{% endblock %}
