@@ -1,2 +1,25 @@
 {% extends '__base__.html' %}
 {% block title %}Let me help{% endblock %}
+{% block content %}
+    {% for x in range(10) %}
+        <div class="article">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-left">Welcome to Jinja2</h1>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="/static/img/default.jpg" alt="test" class="img-responsive img-rounded">
+                        </div>
+                        <div class="col-md-10">
+                            <p class="lead">
+                                Jinja2 is a modern and designer-friendly templating language for Python, modelled after Django’s templates. It is fast, widely used and secure with the optional sandboxed template execution environment
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
