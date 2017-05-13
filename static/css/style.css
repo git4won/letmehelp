@@ -1,0 +1,102 @@
+/*body*/
+body{
+    padding-top: 70px;
+    background-color: #eee;
+    font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+/*文章区域的样式*/
+div.content{
+    padding-bottom: 10px;
+}
+
+/*文章卡片*/
+div.article{
+    padding: 20px 15px 20px 20px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+    clear: both;
+}
+
+/*文章标题的样式*/
+.article header{
+    margin: 0 10px 15px 0;
+    display: block;
+    text-align: left;
+}
+
+.article h2{
+    display: inline;
+    font-size: 20px;
+    margin: 0;
+    font-weight: normal;
+    position: relative;
+    top: 1px;
+    line-height: 25px;
+}
+
+a{
+    color: #00a67c;
+}
+
+a:hover, a:focus {
+    color: #02926e;
+    text-decoration: none;
+}
+
+/*文章概述的样式*/
+.article_content{
+    position: relative;
+}
+.article .note{
+    color: #777;
+    text-align: left;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.article .auth-span{
+    float: right;
+}
+
+.auth-span .muted{
+    padding-right: 20px;
+}
+
+/*widget*/
+.widget{
+    clear: both;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.widget header{
+    padding: 15px 15px 5px 15px;
+    display: block;
+    text-align: left;
+}
+
+.widget h2{
+    color: #00a67c;
+    display: inline;
+    font-size: 20px;
+    margin: 0;
+    font-weight: normal;
+    position: relative;
+    top: 1px;
+    line-height: 25px;
+}
+
+.widget_item{
+    border-bottom: solid 1px #eee;
+    padding: 8px 15px;
+}
+
+/*媒体查询*/
+@media screen and (max-width: 768px){
+    .article h2{
+        text-align: center;
+    }
+}
