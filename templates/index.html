@@ -1,9 +1,44 @@
 {% extends '__base__.html' %}
 {% block title %}Let me help{% endblock %}
 {% block content %}
-        {% if name %}
-            <h1>{{ name }}</h1>
-        {% else %}
-            <h1> hello world </h1>
-        {% endif %}
+    {% for x in range(10) %}
+        <div class="article">
+            <div class="row article_content">
+                <div class="col-md-12">
+                    <header><h2><a href="#" title="关于我们">关于我们</a></h2></header>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="/static/img/default.jpg" alt="test" class="img-responsive img-rounded main_img center-block">
+                        </div>
+                        <div class="col-md-10">
+                            <span class="note">Jinja2 is a modern and designer-friendly templating language for Python, modelled after Django’s templates. It is fast, widely used and secure with the optional sandboxed template execution environment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <ul class="list-inline auth-span">
+                        <li><span class="muted"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><a href="#">admin</a></span></li>
+                        <li><span class="muted"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>1年前 (2016-04-24)</span></li>
+                        <li><span class="muted"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>1959</span></li>
+                        <li><span class="muted"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><a target="_blank" href="#">8评论</a></span></li>
+                        <li><span class="muted"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span><a href="#" data-action="ding" data-id="612" id="Addlike" class="action"><span class="count">22</span>喜欢</a></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
+{% block widget_content %}
+    <div class="widget widget__recent">
+        <header class="widget_title">
+            <h2>近期发布</h2>
+        </header>
+        <ul class="list-unstyled">
+            {% for x in range(10) %}
+                <li class="widget_item"><a href="#">Java is better than python?</a></li>
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock %}
